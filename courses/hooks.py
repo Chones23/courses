@@ -15,7 +15,7 @@ app_license = "Nusantara Digital Konsultan"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/courses/css/courses.css"
+app_include_css = "/assets/courses/css/courses.css"
 # app_include_js = "/assets/courses/js/courses.js"
 
 # include js, css files in header of web template
@@ -119,4 +119,3 @@ app_license = "Nusantara Digital Konsultan"
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "courses.event.get_events"
 # }
-
