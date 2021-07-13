@@ -6,8 +6,8 @@ def get_data():
 	return [
 		{
 			"module_name": "Courses",
-			"color": "grey",
-			"icon": "octicon octicon-file-directory",
+			"color": "Salmon",
+			"icon": "fa fa-certificate",
 			"type": "module",
 			"label": _("Courses")
 		}
