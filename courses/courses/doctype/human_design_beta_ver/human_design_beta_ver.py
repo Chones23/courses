@@ -10,6 +10,18 @@ class HumanDesignBetaVer(Document):
 	pass
 
 @frappe.whitelist()
+def get_default_gate():
+	def_pl = frappe.db.get_value("Template Gates",{"disabled":0,"default_ndk":1},"name")
+	if def_pl not in ['' or None]:
+		return def_pl
+
+@frappe.whitelist()
+def get_default_channel():
+	def_pl = frappe.db.get_value("Template Channel",{"disabled":0,"default_ndk":1},"name")
+	if def_pl not in ['' or None]:
+		return def_pl
+
+@frappe.whitelist()
 def gate_temp(template_gates):
 	row = frappe.db.sql("""Select gates, text_editor_1
 					 from `tabTemplate Gate Item`
