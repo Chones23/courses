@@ -5,6 +5,11 @@
 from __future__ import unicode_literals
 import frappe
 from frappe.model.document import Document
+from frappe import _
 
 class TemplateChannel(Document):
-	pass
+	def on_update(self):
+		x = frappe.db.sql("""select count(name) as name from `tabTemplate Channel` where default_ndk = '1'""",as_dict=1)
+		if x != [] :
+			if x[0].name > 1 :
+				frappe.msgprint(_('ada Template Channel lain yang Default'), raise_exception=1, indicator='red')

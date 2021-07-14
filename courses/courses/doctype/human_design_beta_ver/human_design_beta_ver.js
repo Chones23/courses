@@ -39,5 +39,31 @@ frappe.ui.form.on('Human Design Beta Ver', {
 	      }
 	    })
 		}
+	},
+	onload: function(frm){
+		if(frm.doc.__islocal){
+			frappe.call({
+				method: "courses.courses.doctype.human_design_beta_ver.human_design_beta_ver.get_default_gate",
+				// args: {
+				// 	args:frm.doc.proccessing_code
+				// },
+				callback: function(data) {
+					if(data.message){
+						frappe.model.set_value(frm.doctype,frm.docname, "template_gates", data.message);
+					}
+				}
+			});
+			frappe.call({
+				method: "courses.courses.doctype.human_design_beta_ver.human_design_beta_ver.get_default_channel",
+				// args: {
+				// 	args:frm.doc.proccessing_code
+				// },
+				callback: function(data) {
+					if(data.message){
+						frappe.model.set_value(frm.doctype,frm.docname, "template_channel", data.message);
+					}
+				}
+			});
+		}
 	}
 });
