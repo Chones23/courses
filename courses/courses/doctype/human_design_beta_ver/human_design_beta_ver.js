@@ -4,6 +4,12 @@
 frappe.ui.form.on('Human Design Beta Ver', {
 	template_gates: function(frm) {
 		frm.clear_table("gates")
+
+		if(frm.doc.template_gates == undefined){
+			frm.clear_table("gates")
+			frm.refresh_field("gates");
+		}
+
 		if(frm.doc.template_gates){
 			frappe.call({
 	      method:"courses.courses.doctype.human_design_beta_ver.human_design_beta_ver.gate_temp",
@@ -23,6 +29,12 @@ frappe.ui.form.on('Human Design Beta Ver', {
 	},
 	template_channel: function(frm) {
 		frm.clear_table("channel")
+
+		if(frm.doc.template_channel == undefined){
+			frm.clear_table("channel")
+			frm.refresh_field("channel");
+		}
+
 		if(frm.doc.template_channel){
 			frappe.call({
 	      method:"courses.courses.doctype.human_design_beta_ver.human_design_beta_ver.chanel_temp",
@@ -44,9 +56,6 @@ frappe.ui.form.on('Human Design Beta Ver', {
 		if(frm.doc.__islocal){
 			frappe.call({
 				method: "courses.courses.doctype.human_design_beta_ver.human_design_beta_ver.get_default_gate",
-				// args: {
-				// 	args:frm.doc.proccessing_code
-				// },
 				callback: function(data) {
 					if(data.message){
 						frappe.model.set_value(frm.doctype,frm.docname, "template_gates", data.message);
@@ -55,9 +64,6 @@ frappe.ui.form.on('Human Design Beta Ver', {
 			});
 			frappe.call({
 				method: "courses.courses.doctype.human_design_beta_ver.human_design_beta_ver.get_default_channel",
-				// args: {
-				// 	args:frm.doc.proccessing_code
-				// },
 				callback: function(data) {
 					if(data.message){
 						frappe.model.set_value(frm.doctype,frm.docname, "template_channel", data.message);
