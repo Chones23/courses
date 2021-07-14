@@ -23,24 +23,28 @@ def get_default_channel():
 
 @frappe.whitelist()
 def gate_temp(template_gates):
-	row = frappe.db.sql("""Select gates, text_editor_1
-					 from `tabTemplate Gate Item`
-					 where parent = %s
+	row = frappe.db.sql("""Select tgi.gates,tg.text_editor_1
+					 from `tabTemplate Gate Item` tgi
+					 inner join `tabThe Gates` tg
+					 on tgi.gates=tg.name
+					 where tgi.parent = %s
 					 order by gates asc""",template_gates,as_dict=1)
 
 	si_list = []
 	for i in row :
 		si_list.append(frappe._dict({
 			"link_gate": i.gates,
-			"read": i.text_editor_1
+			"read":i.text_editor_1
 		}))
 	return si_list
 
 @frappe.whitelist()
 def chanel_temp(template_channel):
-	row = frappe.db.sql("""Select channel, text_editor_1
-					 from `tabTemplate Channel Item`
-					 where parent = %s
+	row = frappe.db.sql("""Select tci.channel, tc.text_editor_1
+					 from `tabTemplate Channel Item` tci
+					 inner join `tabThe Channel` tc
+					 on tci.channel=tc.name
+					 where tci.parent = %s
 					 order by channel asc""",template_channel,as_dict=1)
 
 	si_list = []
