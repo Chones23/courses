@@ -1,7 +1,12 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-__version__ = '0.0.5'
+__version__ = '0.0.6'
+
+# 0.0.6
+# Add checklist default in "Template Channel"
+# Add checklist default in "Template Gates"
+# Get Default "Template Channel" and "Template Gates" in "Human Design Beta Ver"
 
 # 0.0.5
 # Delete doctype "Human Design Beta"
