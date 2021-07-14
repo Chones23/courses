@@ -12,4 +12,4 @@ class TemplateGates(Document):
 		x = frappe.db.sql("""select count(name) as name from `tabTemplate Gates` where default_ndk= '1'""",as_dict=1)
 		if x != [] :
 			if x[0].name > 1 :
-				frappe.msgprint(_('ada Template Gates lain yang Default'), raise_exception=1, indicator='red')
+				frappe.msgprint(_('Ada Template Gates lain yang Default'), raise_exception=1, indicator='red')
