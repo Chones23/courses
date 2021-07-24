@@ -9,18 +9,11 @@
 </head>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <body>
-<div id="footer-html" class="visible-pdf">
-    		{% if not no_letterhead and footer %}
-    		<div class="letter-head-footer">
-    		</div>
-    		{% endif %}
-    		<p class="text-center small page-number visible-pdf">
-    			{{ _("Page {0} of {1}").format('<span class="page"></span>', '<span class="topage"></span>') }}
-    		</p>
-    	</div>
-<div class="container" style="width:100%">
-  <img src="https://i21.servimg.com/u/f21/11/81/93/00/sampul12.png" alt="Human Design" style="width:100%;height:1120px">
+
+<div class="container" style="width:100%; height:100%; padding : 0px !important">
+  <img src="https://i21.servimg.com/u/f21/11/81/93/00/sampul12.png" alt="Human Design" style="width:100%">
   <div class="centered" style="text-align:center">{{doc.nama_lengkap}}</div></div>
+<div class="page-break"></div>
 <table width="100%" class="table table-no_bordered">
     <tr>
         <td>
@@ -367,8 +360,6 @@
     <tr>
         <td>
 <a href="https://servimg.com/view/11819300/1921" target="_blank" ><img class="sizes" src="https://i21.servimg.com/u/f21/11/81/93/00/1510.jpg" border="0" alt="HASIL PEMBACAAN HUMAN DESIGN" /></a>
-<p style="text-align:left;">
-<p><br>
         </td>
     </tr>
 </table>
@@ -376,9 +367,9 @@
 
 {% for row in doc.gates %}
  {% if row.gates == 1 %}
-<table width="100%" class="table table-no_bordered">
+<table width="100%" class="table table-no_bordered_page">
 <tr>
-   <td class="text-right"><strong><small>{{ row.get_formatted("read") }}</small></strong></td>
+   <td class="sizes"><strong><small>{{ row.get_formatted("read") }}</small></strong></td>
 </tr>
 </table>
 <div class="page-break"></div>
@@ -404,19 +395,20 @@
 <!--channel-->
 {% for row in doc.channel %}
  {% if row.channel == 1 %}
-<table width="100%" class="table table-no_bordered">
+<table class="table table-no_bordered_page">
 <tr>
-   <td class="text-right"><strong><small>{{ row.get_formatted("read") }}</small></strong></td>
+   <td class="text-right" style="height:920px"><strong><small>{{ row.get_formatted("read") }}</small></strong></td>
 </tr>
 </table>
 <div class="page-break"></div>
  {% endif %}
 {% endfor %}
 <!--channel-->
+
 <table width="100%" class="table table-no_bordered">
     <tr>
         <td>
-<a href="https://servimg.com/view/11819300/1935" target="_blank" ><img  src="https://i21.servimg.com/u/f21/11/81/93/00/113.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
+<a href="https://servimg.com/view/11819300/1935" target="_blank" ><img class="sizes" src="https://i21.servimg.com/u/f21/11/81/93/00/113.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
         </td>
     </tr>
 </table>
@@ -424,7 +416,7 @@
 <table width="100%" class="table table-no_bordered">
     <tr>
         <td>
-<a href="https://servimg.com/view/11819300/1936" target="_blank" ><img  src="https://i21.servimg.com/u/f21/11/81/93/00/212.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
+<a href="https://servimg.com/view/11819300/1936" target="_blank" ><img class="sizes" src="https://i21.servimg.com/u/f21/11/81/93/00/212.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
         </td>
     </tr>
 </table>
@@ -432,7 +424,7 @@
 <table width="100%" class="table table-no_bordered">
     <tr>
         <td>
-<a href="https://servimg.com/view/11819300/1937" target="_blank" ><img  src="https://i21.servimg.com/u/f21/11/81/93/00/312.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
+<a href="https://servimg.com/view/11819300/1937" target="_blank" ><img class="sizes" src="https://i21.servimg.com/u/f21/11/81/93/00/312.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
         </td>
     </tr>
 </table>
@@ -440,7 +432,7 @@
 <table width="100%" class="table table-no_bordered">
     <tr>
         <td>
-<a href="https://servimg.com/view/11819300/1939" target="_blank" ><img  src="https://i21.servimg.com/u/f21/11/81/93/00/412.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
+<a href="https://servimg.com/view/11819300/1939" target="_blank" ><img class="sizes" src="https://i21.servimg.com/u/f21/11/81/93/00/412.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
         </td>
     </tr>
 </table>
@@ -448,7 +440,7 @@
 <table width="100%" class="table table-no_bordered">
     <tr>
         <td>
-<a href="https://servimg.com/view/11819300/1938" target="_blank" ><img  src="https://i21.servimg.com/u/f21/11/81/93/00/512.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
+<a href="https://servimg.com/view/11819300/1938" target="_blank" ><img class="sizes" src="https://i21.servimg.com/u/f21/11/81/93/00/512.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
         </td>
     </tr>
 </table>
@@ -456,7 +448,7 @@
 <table width="100%" class="table table-no_bordered">
     <tr>
         <td>
-<a href="https://servimg.com/view/11819300/1940" target="_blank" ><img  src="https://i21.servimg.com/u/f21/11/81/93/00/612.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
+<a href="https://servimg.com/view/11819300/1940" target="_blank" ><img class="sizes" src="https://i21.servimg.com/u/f21/11/81/93/00/612.jpg" border="0" alt="CATATAN TENTANG HUMAN DESIGN" /></a>
         </td>
     </tr>
 </table>
@@ -477,7 +469,7 @@
     </tr>
 </table>
 <div class="page-break"></div>
-<div class="container" style="width:100%"><img style="width: 100%;" src="https://i.servimg.com/u/f21/11/81/93/00/sampul11.png" height="1120px" width="100%" alt="Human Design Book" />
+<div class="container" style="width:100%; height:100%; padding : 0px !important"><img style="width: 100%;" src="https://i.servimg.com/u/f21/11/81/93/00/sampul11.png" width="100%" alt="Human Design Book" />
 </div></div></div>
 
 
@@ -496,15 +488,23 @@
 
 .table-no_bordered >tbody > tr >td{
 	  border:none;
-          padding-top: 15mm !important;
+          padding-top: 12mm !important;
           padding-left: 16mm !important;
           padding-right: 17mm !important;
-          padding-bottom: 15mm !important;
+          padding-bottom: 12mm !important;
+          }
+
+.table-no_bordered_page >tbody > tr >td{
+	  border:none;
+          padding-top: 8mm !important;
+          padding-left: 16mm !important;
+          padding-right: 17mm !important;
+          padding-bottom: 8mm !important;
           }
 
 .sizes{
 	width:100%;
-	height:980px;
+	height:920px;
 }
 
 .container {
@@ -535,9 +535,7 @@ top: 85%;
 
       @media screen {
       	.print-format {
-      		margin-left:0mm;
-  		margin-top:0mm;
-  		margin-right:0mm;
-  		margin-bottom:0mm;
+      		padding: 0.3in !important;
+      		min-height: 140mm;
       	}
       }
