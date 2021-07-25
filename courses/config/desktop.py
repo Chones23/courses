@@ -6,7 +6,7 @@ def get_data():
 	return [
 		{
 			"module_name": "Courses",
-			"color": "Salmon",
+			"color": "#DE3163",
 			"icon": "fa fa-certificate",
 			"type": "module",
 			"label": _("Courses")

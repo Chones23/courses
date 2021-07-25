@@ -1,7 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-__version__ = '0.0.6'
+__version__ = '0.0.8'
+
+# 0.0.8
+# Finalization 25.07.2021
+# Add temp - 3 print format not used (arsip file)
+
+# 0.0.7
+# Add print format "Human Design Ver" - pdf
 
 # 0.0.6
 # Add checklist default in "Template Channel"
