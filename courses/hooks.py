@@ -7,7 +7,7 @@ app_title = "Courses"
 app_publisher = "Nusantara Digital Konsultan"
 app_description = "App for Courses"
 app_icon = "fa fa-certificate"
-app_color = "Salmon"
+app_color = "#DE3163"
 app_email = "develop@ridhosribumi.co"
 app_license = "Nusantara Digital Konsultan"
 
