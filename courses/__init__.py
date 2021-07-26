@@ -1,7 +1,14 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-__version__ = '0.0.8'
+__version__ = '0.1.0'
+
+# 0.1.0
+# Finalization 26.07.2021
+# New Doctype Human Design New Module for change human design beta ver
+# New Doctype Human Design New Module Item for change human design beta ver item
+# New Doctype Human Design New Module Channel for change human design beta ver channel
+# Add a new print format link to Human Design New Module
 
 # 0.0.9
 # Finalization 26.07.2021
