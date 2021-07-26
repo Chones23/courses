@@ -23,8 +23,8 @@ def get_data():
 				},
 				{
 					"type": "doctype",
-					"name": "Human Design Beta Ver",
-					"description": _("Human Design Beta Ver")
+					"name": "Human Design New Module",
+					"description": _("Human Design New Module")
 				},
 				{
 					"type": "doctype",
