@@ -3,6 +3,11 @@ from __future__ import unicode_literals
 
 __version__ = '0.0.8'
 
+# 0.0.9
+# Finalization 26.07.2021
+# Delete css file
+# Add link in education module to apps courses
+
 # 0.0.8
 # Finalization 25.07.2021
 # Add temp - 3 print format not used (arsip file)
