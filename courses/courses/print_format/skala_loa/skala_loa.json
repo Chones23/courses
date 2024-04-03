@@ -1,0 +1,23 @@
+{
+ "align_labels_right": 1, 
+ "creation": "2023-01-08 19:33:36.728434", 
+ "custom_format": 0, 
+ "default_print_language": "en", 
+ "disabled": 0, 
+ "doc_type": "Skala Derajat Kualitas LOA", 
+ "docstatus": 0, 
+ "doctype": "Print Format", 
+ "font": "Default", 
+ "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \"<div class=\\\"print-heading\\\">\\t\\t\\t\\t<h2>Skala Derajat Kualitas LOA<br><small>{{ doc.name }}</small>\\t\\t\\t\\t</h2></div>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"print_hide\": 0, \"label\": \"Custom HTML\", \"fieldname\": \"_custom_html\", \"options\": \"<p>Hallo kak {{doc.nama}}, selamat karena Anda telah mengetahui posisi serta level kualitas derajat LOA Anda.</p>\\n<p>&nbsp;</p>\\n<p>Berdasarkan hasil data yang dimasukkan, maka berikut adalah rangkuman dari analisa Nilai Derajat Kualitas LOA Anda:</p>\\n<p>&nbsp;</p>\\n<ul>\\n<li>Nilai Kualitas Vibrasi (KV) Anda adalah: <strong>{{doc.nilai_kv}}</strong></li>\\n<li>Nilai Tindakan Nyata Strategis (TNS) Anda adalah: <strong>{{doc.tns}}</strong></li>\\n<li>Nilai Rekening Manfaat Kebaikan (RMK) Anda adalah <strong>{{doc.rmk}}</strong></li>\\n</ul>\\n<p>&nbsp;</p>\\n<p>Dari parameter diatas, hasil kualitas derajat LOA Anda adalah: <strong>{{doc.skala_loa}}</strong></p>\\n<p>&nbsp;</p>\\n<p>Berikut ini adalah acuan skala derajat kualitas LOA sebagai referensi:</p>\\n<p><img src=\\\"https://i.servimg.com/u/f21/11/81/93/00/skala_10.png\\\" alt=\\\"\\\" /></p>\\n<p>&nbsp;</p>\\n<p>Dari gambar diatas, maka bisa disimpulkan kalau kak {{doc.nama}} berada di level&nbsp;</p>\\n<p>&nbsp;</p>\\n<p>Berikut ini kami berikan Hasil Pembacaan Interpretasi secara lebih mendetailnya:</p>\", \"fieldtype\": \"HTML\"}, {\"fieldtype\": \"Section Break\", \"label\": \"INTERPRETASI HASIL DERAJAT KUALITAS LOA ANDA\"}, {\"fieldtype\": \"Column Break\"}, {\"print_hide\": 0, \"fieldname\": \"hasil_loa\", \"label\": \"Hasil Interpretasi Derajat Skala LOA Anda\"}]", 
+ "idx": 0, 
+ "line_breaks": 1, 
+ "modified": "2023-01-08 20:08:57.857700", 
+ "modified_by": "Administrator", 
+ "module": "Courses", 
+ "name": "Skala LOA", 
+ "owner": "Administrator", 
+ "print_format_builder": 0, 
+ "print_format_type": "Server", 
+ "show_section_headings": 1, 
+ "standard": "Yes"
+}

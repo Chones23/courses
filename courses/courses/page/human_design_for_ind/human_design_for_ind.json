@@ -1,0 +1,26 @@
+{
+ "content": null, 
+ "creation": "2022-09-26 23:14:18.077611", 
+ "docstatus": 0, 
+ "doctype": "Page", 
+ "idx": 0, 
+ "modified": "2022-09-28 14:28:56.131439", 
+ "modified_by": "Administrator", 
+ "module": "Courses", 
+ "name": "human-design-for-ind", 
+ "owner": "Administrator", 
+ "page_name": "Human Design for Individual", 
+ "roles": [
+  {
+   "role": "System Manager"
+  }, 
+  {
+   "role": "Human Designer"
+  }
+ ], 
+ "script": null, 
+ "standard": "Yes", 
+ "style": null, 
+ "system_page": 0, 
+ "title": "Human Design For Individual"
+}

@@ -79,13 +79,21 @@ app_license = "Nusantara Digital Konsultan"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Advanced Class Module 1 Preliminary Assessment": {
+		"validate": [
+			"courses.doc_events.advanced_class_module_1_preliminary_assessment.generate_plotlib_radar_chart.execute",
+			"courses.doc_events.advanced_class_module_1_preliminary_assessment.generate_hasil_review.execute"
+		]
+	},
+	"Advanced Class Module 8 Post Learning Assessment": {
+		"validate": [
+			"courses.doc_events.advanced_class_module_8_post_learning_assessment.generate_plotlib_radar_chart.execute",
+			"courses.doc_events.advanced_class_module_8_post_learning_assessment.generate_hasil_review.execute"
+		]
+	}
+}
+
 
 # Scheduled Tasks
 # ---------------
